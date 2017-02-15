@@ -1,0 +1,3 @@
+"Database Health Check on ida-ver-stg-v.gre.omc.hp.com at 20160315_110915" 
+"***** Completed at 20160315_110915 on ida-ver-stg-v.gre.omc.hp.com *****" 
+"Occurance is = 1" 

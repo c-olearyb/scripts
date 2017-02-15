@@ -1,0 +1,219 @@
+Running on Production 
+"Database Health Check on ida-verp01-v.gre.omc.hp.com at 20160322_072932" 
+ 
+Timing is on.
+"Print System Date;#####################################################################################################"
+          sysdate           
+----------------------------
+ 2016-03-22 07:29:35.149752
+(1 row)
+
+
+Time: First fetch (1 row): 1316.000 ms. All rows formatted: 1363.000 ms
+"Canary Query;#####################################################################################################"
+    database_id    | database_name |     owner_id      | owner_name |          start_time           |                      compliance_message                      | export_subnet | load_balance_policy 
+-------------------+---------------+-------------------+------------+-------------------------------+--------------------------------------------------------------+---------------+---------------------
+ 45035996273704974 | ebi           | 45035996273704962 | dbadmin    | 2016-03-05 12:20:38.062006+00 | The database is in compliance with respect to raw data size. |             0 | none
+(1 row)
+
+
+Time: First fetch (1 row): 1030.000 ms. All rows formatted: 1058.000 ms
+"Check Nodes Status;#####################################################################################################"
+   node_name    |      node_id      | node_state | node_address | node_address_family | export_address | export_address_family |                catalog_path                 | node_type | is_ephemeral | standing_in_for | node_down_since 
+----------------+-------------------+------------+--------------+---------------------+----------------+-----------------------+---------------------------------------------+-----------+--------------+-----------------+-----------------
+ v_ebi_node0001 | 45035996273704980 | UP         | 10.1.1.1     |                     | 138.35.13.153  |                       | /catalog/ebi/v_ebi_node0001_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0002 | 45035996273718998 | UP         | 10.1.1.2     |                     | 138.35.13.154  |                       | /catalog/ebi/v_ebi_node0002_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0003 | 45035996273719002 | UP         | 10.1.1.3     |                     | 138.35.13.155  |                       | /catalog/ebi/v_ebi_node0003_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0004 | 45035998049021110 | UP         | 10.1.1.4     |                     | 138.35.12.6    |                       | /catalog/ebi/v_ebi_node0004_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0005 | 45035998049021178 | UP         | 10.1.1.5     |                     | 138.35.12.7    |                       | /catalog/ebi/v_ebi_node0005_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0006 | 45035998495494060 | UP         | 10.1.1.6     | ipv4                | 138.35.12.24   | ipv4                  | /catalog/ebi/v_ebi_node0006_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0007 | 45035998495506648 | UP         | 10.1.1.9     | ipv4                | 138.35.38.81   | ipv4                  | /catalog/ebi/v_ebi_node0007_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0008 | 45035998552219132 | UP         | 10.1.1.7     | ipv4                | 138.35.38.79   | ipv4                  | /catalog/ebi/v_ebi_node0008_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0009 | 45035998552221042 | UP         | 10.1.1.8     | ipv4                | 138.35.38.80   | ipv4                  | /catalog/ebi/v_ebi_node0009_catalog/Catalog | PERMANENT | f            |                 | 
+(9 rows)
+
+
+Time: First fetch (9 rows): 1450.000 ms. All rows formatted: 1478.000 ms
+"Nodes not in UP status############################################################################################################"
+ node_name | node_state | node_address | export_address | catalog_path 
+-----------+------------+--------------+----------------+--------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 1188.000 ms. All rows formatted: 1215.000 ms
+"Get Current AHM Time;#####################################################################################################"
+                  get_ahm_time                   |          sysdate           
+-------------------------------------------------+----------------------------
+ Current AHM Time: 2016-03-22 07:18:08.032363+00 | 2016-03-22 07:29:39.801095
+(1 row)
+
+
+Time: First fetch (1 row): 786.000 ms. All rows formatted: 815.000 ms
+"Validate Unrefresehd Projections##########################################################################################################"
+"If return=0 then projections are refreshed"
+ projection_schema | anchor_table_name | projection_name 
+-------------------+-------------------+-----------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 18844.000 ms. All rows formatted: 18872.000 ms
+"Check downtimes from the last 24 hours##########################################################################################################"
+ event_timestamp | Time_ago | node_name | node_state 
+-----------------+----------+-----------+------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 93197.000 ms. All rows formatted: 93235.000 ms
+"***** Completed at 20160322_072932 on ida-verp01-v.gre.omc.hp.com *****" 
+ 
+ 
+ 
+ 
+ 
+ 
+Running on A2D2 
+"Database Health Check on 138.35.13.241 at 20160322_073132" 
+ 
+Timing is on.
+"Print System Date;#####################################################################################################"
+          sysdate           
+----------------------------
+ 2016-03-22 07:31:32.838418
+(1 row)
+
+
+Time: First fetch (1 row): 366.000 ms. All rows formatted: 394.000 ms
+"Canary Query;#####################################################################################################"
+    database_id    | database_name |     owner_id      | owner_name |          start_time           |                      compliance_message                      | export_subnet | load_balance_policy 
+-------------------+---------------+-------------------+------------+-------------------------------+--------------------------------------------------------------+---------------+---------------------
+ 45035996273704974 | ebi           | 45035996273704962 | dbadmin    | 2016-01-19 06:02:12.800336+00 | The database is in compliance with respect to raw data size. |             0 | none
+(1 row)
+
+
+Time: First fetch (1 row): 142.000 ms. All rows formatted: 170.000 ms
+"Check Nodes Status;#####################################################################################################"
+   node_name    |      node_id      | node_state | node_address | node_address_family | export_address | export_address_family |                catalog_path                 | node_type | is_ephemeral | standing_in_for | node_down_since 
+----------------+-------------------+------------+--------------+---------------------+----------------+-----------------------+---------------------------------------------+-----------+--------------+-----------------+-----------------
+ v_ebi_node0001 | 45035996273704980 | UP         | 10.1.1.70    |                     | 138.35.13.238  |                       | /catalog/ebi/v_ebi_node0001_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0002 | 45035996273718998 | UP         | 10.1.1.80    |                     | 138.35.13.239  |                       | /catalog/ebi/v_ebi_node0002_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0003 | 45035996273719002 | UP         | 10.1.1.90    |                     | 138.35.13.240  |                       | /catalog/ebi/v_ebi_node0003_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0004 | 45035997696386034 | UP         | 10.1.1.110   |                     | 138.35.12.5    |                       | /catalog/ebi/v_ebi_node0004_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0005 | 45035997696386456 | UP         | 10.1.1.120   |                     | 138.35.12.10   |                       | /catalog/ebi/v_ebi_node0005_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0006 | 45035997923690174 | UP         | 10.1.1.100   | ipv4                | 138.35.38.82   | ipv4                  | /catalog/ebi/v_ebi_node0006_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0007 | 45035997923691572 | UP         | 10.1.1.130   | ipv4                | 138.35.38.83   | ipv4                  | /catalog/ebi/v_ebi_node0007_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0008 | 45035997923692616 | UP         | 10.1.1.140   | ipv4                | 138.35.38.84   | ipv4                  | /catalog/ebi/v_ebi_node0008_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0009 | 45035997923693434 | UP         | 10.1.1.150   | ipv4                | 138.35.38.85   | ipv4                  | /catalog/ebi/v_ebi_node0009_catalog/Catalog | PERMANENT | f            |                 | 
+(9 rows)
+
+
+Time: First fetch (9 rows): 278.000 ms. All rows formatted: 305.000 ms
+"Nodes not in UP status############################################################################################################"
+ node_name | node_state | node_address | export_address | catalog_path 
+-----------+------------+--------------+----------------+--------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 373.000 ms. All rows formatted: 400.000 ms
+"Get Current AHM Time;#####################################################################################################"
+                  get_ahm_time                   |          sysdate          
+-------------------------------------------------+---------------------------
+ Current AHM Time: 2016-03-22 07:20:22.395216+00 | 2016-03-22 07:31:33.94627
+(1 row)
+
+
+Time: First fetch (1 row): 124.000 ms. All rows formatted: 151.000 ms
+"Validate Unrefresehd Projections##########################################################################################################"
+"If return=0 then projections are refreshed"
+ projection_schema | anchor_table_name | projection_name 
+-------------------+-------------------+-----------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 4093.000 ms. All rows formatted: 4124.000 ms
+"Check downtimes from the last 24 hours##########################################################################################################"
+ event_timestamp | Time_ago | node_name | node_state 
+-----------------+----------+-----------+------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 2336.000 ms. All rows formatted: 2364.000 ms
+"***** Completed at 20160322_073132 on 138.35.13.241 *****" 
+ 
+ 
+ 
+ 
+ 
+ 
+Running on Staging 
+"Database Health Check on ida-ver-stg-v.gre.omc.hp.com at 20160322_073140" 
+ 
+Timing is on.
+"Print System Date;#####################################################################################################"
+          sysdate           
+----------------------------
+ 2016-03-22 07:31:41.563695
+(1 row)
+
+
+Time: First fetch (1 row): 130.000 ms. All rows formatted: 159.000 ms
+"Canary Query;#####################################################################################################"
+    database_id    | database_name |     owner_id      | owner_name |          start_time           |                      compliance_message                      | export_subnet | load_balance_policy 
+-------------------+---------------+-------------------+------------+-------------------------------+--------------------------------------------------------------+---------------+---------------------
+ 45035996273704974 | ebi           | 45035996273704962 | dbadmin    | 2016-01-10 13:14:01.211619+00 | The database is in compliance with respect to raw data size. |             0 | roundrobin
+(1 row)
+
+
+Time: First fetch (1 row): 242.000 ms. All rows formatted: 270.000 ms
+"Check Nodes Status;#####################################################################################################"
+   node_name    |      node_id      | node_state | node_address | node_address_family | export_address | export_address_family |                catalog_path                 | node_type | is_ephemeral | standing_in_for | node_down_since 
+----------------+-------------------+------------+--------------+---------------------+----------------+-----------------------+---------------------------------------------+-----------+--------------+-----------------+-----------------
+ v_ebi_node0001 | 45035996273704980 | UP         | 10.1.1.10    |                     | 138.35.192.46  |                       | /catalog/ebi/v_ebi_node0001_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0002 | 45035996273718998 | UP         | 10.1.1.20    |                     | 138.35.192.47  |                       | /catalog/ebi/v_ebi_node0002_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0003 | 45035996273719002 | UP         | 10.1.1.30    |                     | 138.35.192.48  |                       | /catalog/ebi/v_ebi_node0003_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0004 | 45035997345128604 | UP         | 10.1.1.40    |                     | 138.35.192.249 |                       | /catalog/ebi/v_ebi_node0004_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0005 | 45035997345131756 | UP         | 10.1.1.50    |                     | 138.35.192.250 |                       | /catalog/ebi/v_ebi_node0005_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0006 | 45035997486333136 | UP         | 10.1.1.60    | ipv4                | 138.35.192.117 | ipv4                  | /catalog/ebi/v_ebi_node0006_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0007 | 45035997486334202 | UP         | 10.1.1.61    | ipv4                | 138.35.192.118 | ipv4                  | /catalog/ebi/v_ebi_node0007_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0008 | 45035997486335228 | UP         | 10.1.1.62    | ipv4                | 138.35.192.119 | ipv4                  | /catalog/ebi/v_ebi_node0008_catalog/Catalog | PERMANENT | f            |                 | 
+ v_ebi_node0009 | 45035997486336326 | UP         | 10.1.1.63    | ipv4                | 138.35.192.120 | ipv4                  | /catalog/ebi/v_ebi_node0009_catalog/Catalog | PERMANENT | f            |                 | 
+(9 rows)
+
+
+Time: First fetch (9 rows): 188.000 ms. All rows formatted: 226.000 ms
+"Nodes not in UP status############################################################################################################"
+ node_name | node_state | node_address | export_address | catalog_path 
+-----------+------------+--------------+----------------+--------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 156.000 ms. All rows formatted: 188.000 ms
+"Get Current AHM Time;#####################################################################################################"
+                  get_ahm_time                   |          sysdate           
+-------------------------------------------------+----------------------------
+ Current AHM Time: 2016-03-22 07:06:45.726911+00 | 2016-03-22 07:31:42.467911
+(1 row)
+
+
+Time: First fetch (1 row): 103.000 ms. All rows formatted: 131.000 ms
+"Validate Unrefresehd Projections##########################################################################################################"
+"If return=0 then projections are refreshed"
+ projection_schema | anchor_table_name | projection_name 
+-------------------+-------------------+-----------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 4996.000 ms. All rows formatted: 5025.000 ms
+"Check downtimes from the last 24 hours##########################################################################################################"
+ event_timestamp | Time_ago | node_name | node_state 
+-----------------+----------+-----------+------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 342.000 ms. All rows formatted: 369.000 ms
+"***** Completed at 20160322_073140 on ida-ver-stg-v.gre.omc.hp.com *****" 
+ 
+ 
+ 
+ 
+ 
+ 

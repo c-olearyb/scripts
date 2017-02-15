@@ -1,0 +1,1 @@
+DBHealthcheck ida-ver-stg-v.gre.omc.hp.com dbadmin pass4admin 120

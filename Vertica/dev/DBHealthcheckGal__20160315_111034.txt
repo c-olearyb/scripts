@@ -1,0 +1,34 @@
+"Database Health Check on ida-ver-stg-v.gre.omc.hp.com at 20160315_111038" 
+Timing is on.
+"Select sysdate from dual;#####################################################################################################"
+          sysdate           
+----------------------------
+ 2016-03-15 11:10:39.942052
+(1 row)
+
+
+Time: First fetch (1 row): 619.000 ms. All rows formatted: 652.000 ms
+"Canary Query;#####################################################################################################"
+    database_id    | database_name |     owner_id      | owner_name |          start_time           |                      compliance_message                      | export_subnet | load_balance_policy 
+-------------------+---------------+-------------------+------------+-------------------------------+--------------------------------------------------------------+---------------+---------------------
+ 45035996273704974 | ebi           | 45035996273704962 | dbadmin    | 2016-01-10 13:14:01.211619+00 | The database is in compliance with respect to raw data size. |             0 | roundrobin
+(1 row)
+
+
+Time: First fetch (1 row): 859.000 ms. All rows formatted: 888.000 ms
+"GET_AHM_TIME##########################################################################################################"
+"If TIME_AGO is higher than 1 hour, consider run SELECT MAKE_AHM_NOW();"
+          sysdate           |         min_epoch          |      time_ago       
+----------------------------+----------------------------+---------------------
+ 2016-03-15 11:10:41.738443 | 2016-03-15 11:02:33.701379 | 0000-00-00 00:08:08
+(1 row)
+
+
+Time: First fetch (1 row): 910.000 ms. All rows formatted: 936.000 ms
+"Nodes not in UP status############################################################################################################"
+ node_name | node_state | node_address | export_address | catalog_path 
+-----------+------------+--------------+----------------+--------------
+(0 rows)
+
+
+Time: First fetch (0 rows): 1951.000 ms. All rows formatted: 1979.000 ms
